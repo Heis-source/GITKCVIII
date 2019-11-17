@@ -4,7 +4,7 @@
 - *git reset --hard HEAD~1* "HEAD~1" me permite volver un paso hacia atras el puntero HEAD (mi ubicacion) y la opcion "--hard" permite que GIT modifique mi WorkingCopy.
 
 **Paso 12:**
--  *git reset --hard 75070c7* En este caso al igual que en el paso anterior "--hard" me sirve para recuperar el estado del commit al que hago referencia (**75070c7**a32055fd221c4ae0eb06701e146137adf). He usado tambien el comando *git reflog* para poder buscar el commit al que queria volver.
+-  *git reset --hard 75070c7* En este caso al igual que en el paso anterior "--hard" me sirve para recuperar el estado del commit (y WorkingCopy) al que hago referencia (**75070c7**a32055fd221c4ae0eb06701e146137adf). He usado tambien el comando *git reflog* para poder buscar el commit al que queria volver.
 
 **Paso 13:**
 - *Already up to date*. "Styled" tiene vision sobre master en este momento por tanto ya esta actualizado.
@@ -37,4 +37,4 @@
 - Revisando *git log* cojo el HASH del primer commit y me muevo con *git checkout 1bdfdf1*. No lo especifica pero si se trata de mover master seria *git reset --hard 1bdfdf1*
 
 **Paso 33:**
-- Revisando *git reflog* cojo el HASH del it y me muevo con *git checkout 509c450*. No lo especifica pero si se trata de mover master seria *git reset --hard 509c450*
+- Revisando *git reflog* cojo el HASH que me interesa y me muevo con *git checkout 509c450*. No lo especifica pero si se trata de mover master seria *git reset --hard 509c450*
